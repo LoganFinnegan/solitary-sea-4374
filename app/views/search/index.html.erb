@@ -1,14 +1,12 @@
 <section class="member-list">
-<h3>Total number of people: <%=@chars.count%> </h3>
+  <h3>Total number of people: <%=@chars.count%> </h3>
 
-<% @chars.each do |char| %>
-  <div id="char-<%= char.id %>">
-    <h3><%= char.name %></h3>
-    <p><%= char.allies %></p>
-    <p><%= char.enemies %></p>
-    <p><%= char.affiliation %></p>
-  </div>
-<% end %>
-
-
+  <% @chars.each do |char| %>
+    <div id="char-<%= char.id %>">
+      <h3><%= char.name %></h3>
+      <p><%= char.allies %></p>
+      <p><%= char.enemies %></p>
+      <p><%= char.affiliation %></p>
+    </div>
+  <% end %>
 </section>

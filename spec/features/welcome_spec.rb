@@ -19,7 +19,9 @@ RSpec.describe 'welcome page', type: :feature do
         # Then I should see the total number of people who live in the Fire Nation. (should be close to 100)
         expect(page).to have_content('Total number of people: 20')
         # And I should see a list with the detailed information for the first 25 members of the Fire Nation.
-        within "#char-#5cf5679a915ecad153ab68d5" do
+        # save_and_open_page
+        within "#char-5cf5679a915ecad153ab68d5" do
+        
           # And for each of the members I should see:
           # - The name of the member (and their photo, if they have one)
           expect(page).to have_content('Arik')

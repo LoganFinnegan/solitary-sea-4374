@@ -3,7 +3,7 @@ class CharsService
     response = connection.get(url) do |request| 		
       request.params = params	
     end		
-    JSON.parse(response.body, symbolize_names: true)		
+    JSON.parse(response.body, symbolize_names: true)
   end		
       
   private		
